@@ -30,52 +30,72 @@ footer{
 	text-align: center;
   font-family: 'Rubik Moonrocks', cursive;
 }
-.button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+@media only screen and (max-width: 800px){
+  nav,main{
+    width: 100%;
+  }
+}
+.button-65 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #edb42f;
+  border:orangered  double 5px;
+  border-radius: 5px;
+  box-shadow: none;
   box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
   text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  vertical-align: top;
   white-space: nowrap;
-  cursor: pointer;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-.button-64:active,
-.button-64:hover {
-  outline: 0;
+.button-65:hover {
+  background-color: #d68113;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
 }
 
-.button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
+.button-65:hover:after {
+  opacity: .5;
 }
 
-.button-64:hover span {
-  background: none;
+.button-65:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-65:active:after {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
-  .button-64 {
-    font-size: 24px;
-    min-width: 196px;
+  .button-65 {
+    padding: 14px 22px;
+    width: 100px;
   }
 }
 .iframe1 {
